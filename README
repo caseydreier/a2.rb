@@ -7,7 +7,7 @@ Usage
 
 Instead you use the command line ruby script a2b.rb to spit out your directions for you, ready for copying:
 
-  ruby a2.rb space needle, seattle, wa to golden gate bridge, san francisco, ca
+  a2.rb space needle, seattle, wa to golden gate bridge, san francisco, ca
 
 returns:
 
@@ -35,6 +35,6 @@ returns:
 
 Since you have a Mac, you can pipe the output into pbcopy:
 
-  ruby a2.rb space needle, seattle, wa to golden gate bridge, san francisco, ca | pbcopy
+  a2.rb space needle, seattle, wa to golden gate bridge, san francisco, ca | pbcopy
 
 and then paste directly into your whatever.
