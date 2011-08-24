@@ -1,0 +1,40 @@
+This is a simple command line interface to Google's directions API.  No API key needed.
+
+Usage
+=====
+
+(Grandma|College Friend|Hookup) needs directions to your house.  You are a busy person, with no time to go to Google Maps, type in a bunch of things, then copy, paste, format, etc to the email you need to send.
+
+Instead you use the command line ruby script a2b.rb to spit out your directions for you, ready for copying:
+
+  ruby a2.rb space needle, seattle, wa to golden gate bridge, san francisco, ca
+
+returns:
+
+  1. Head east on Space Needle Loop toward Broad St (213 ft)
+  2. Turn left onto Broad St (423 ft)
+  3. Slight left onto 5th Ave N (0.3 mi)
+  4. Take the 3rd right onto Mercer St (200 ft)
+  5. Slight left to stay on Mercer St (0.6 mi)
+  6. Take the ramp to I-5 S (210 ft)
+  7. Keep right at the fork, follow signs for I-5 S (0.5 mi)
+  8. Slight right onto I-5 SEntering Oregon (173 mi)
+  9. Slight left to stay on I-5 S (1.6 mi)
+  10. Slight right to stay on I-5 SEntering California (544 mi)
+  11. Slight right onto I-505 S (signs for Interstate 505 S/Winters/San Francisco) (33.2 mi)
+  12. Take exit 1A on the left to merge onto I-80 W toward San Francisco (47.1 mi)
+  13. Slight right to stay on I-80 W (signs for San Francisco)Partial toll road (8.1 mi)
+  14. Take exit 1B to merge onto US-101 N toward Golden Gate Bridge (0.7 mi)
+  15. Take exit 434A to merge onto US-101 N/Mission St toward G G Bridge (0.4 mi)
+  16. Turn left onto S Van Ness Ave (2.0 mi)
+  17. Turn left onto Lombard St (1.1 mi)
+  18. Continue onto Richardson Ave (0.2 mi)
+  19. Continue onto US-101 N/Doyle DrContinue to follow US-101 N (1.7 mi)
+  20. Take exit 439 toward View Area Presidio/Golden Gate Nra (387 ft)
+  21. Slight leftDestination will be on the left (0.1 mi)
+
+Since you have a Mac, you can pipe the output into pbcopy:
+
+  ruby a2.rb space needle, seattle, wa to golden gate bridge, san francisco, ca | pbcopy
+
+and then paste directly into your whatever.
